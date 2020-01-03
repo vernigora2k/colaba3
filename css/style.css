@@ -56,3 +56,66 @@ html {
 *::after {
   box-sizing: inherit;
 }
+
+body {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #323232;
+}
+
+.wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+/*header styles start*/
+
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
+.header-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.header-nav-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-nav-list-item {
+  margin-right: 40px;
+}
+.header-nav-list-item:last-child{
+  margin-right: 0px;
+}
+
+.header-nav-list-item-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #ffffff
+}
+.header-nav-list-item-link:hover, .header-nav-list-item-link:focus, .header-nav-list-item-link:active {
+  opacity: .75;
+}
+
+/*header styles end*/
+
+/*intro styles start*/
+.intro {
+  height: 100vh;
+  background: url(/img/jpg/Rectangle.jpg);
+}
+/*intro styles end*/
