@@ -293,6 +293,8 @@ body {
 .our_project_items {
   max-width: 1110px;
   margin: 0 auto;
+  margin-top: 70px;
+  margin-bottom: 70px;
 }
 .our_project_items_list {
   display: flex;
