@@ -1,2 +1,2 @@
 let add = (a,b) => a+b
-Console.log(add(2,5))
+console.log(add(2,7))
