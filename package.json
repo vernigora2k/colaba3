@@ -1,0 +1,26 @@
+{
+  "name": "project-1_with_webpack",
+  "version": "1.0.0",
+  "description": "project-1_with_webpack",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vernigora2k/colaba3.git"
+  },
+  "author": "vernigora",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vernigora2k/colaba3/issues"
+  },
+  "homepage": "https://github.com/vernigora2k/colaba3#readme",
+  "devDependencies": {
+    "path": "^0.12.7",
+    "webpack": "^4.41.5",
+    "webpack-cli": "^3.3.10",
+    "webpack-dev-server": "^3.10.1"
+  }
+}
