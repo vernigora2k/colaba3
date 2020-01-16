@@ -1,4 +1,5 @@
 const path = require("path");
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
     entry: {
@@ -16,11 +17,23 @@ module.exports = {
              test: /\.js$/,
              loader: 'babel-loader',
              exclude: /node_modules/   
+            },{
+             test: /\.css$/i,
+             use: [MiniCssExtractPlugin.loader, 'css-loader'],
             }
         ]
     },
 
     devServer: {
         overlay: true
-    }
+    },
+
+    plugins: [
+        new MiniCssExtractPlugin({
+          // Options similar to the same options in webpackOptions.output
+          // both options are optional
+          filename: '[name].css',
+          //chunkFilename: '[id].css',
+        }),
+      ]
 }
