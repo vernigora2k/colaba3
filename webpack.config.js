@@ -1,5 +1,12 @@
 const path = require("path");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
+
+const PATHS = {
+    src: path.join(__dirname, '../src'),
+    dist: path.join(__dirname, '../dist'),
+    assets: 'assets/'
+  }
 
 module.exports = {
     entry: {
@@ -20,6 +27,12 @@ module.exports = {
             },{
              test: /\.css$/i,
              use: [MiniCssExtractPlugin.loader, 'css-loader'],
+            },{
+             test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+             loader: 'file-loader',
+             options: {
+                 name: '[name].[ext]'
+                 }
             }
         ]
     },
@@ -35,5 +48,8 @@ module.exports = {
           filename: '[name].css',
           //chunkFilename: '[id].css',
         }),
+        new CopyWebpackPlugin([
+        { from: `${PATHS.src}/${PATHS.assets}fonts`, to: `${PATHS.assets}fonts` },
+          ])
       ]
 }
