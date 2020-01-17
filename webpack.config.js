@@ -5,7 +5,8 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const PATHS = {
     src: path.join(__dirname, '../src'),
     dist: path.join(__dirname, '../dist'),
-    assets: 'assets/'
+    assets: 'assets/',
+    fonts: 'fonts/'
   }
 
 module.exports = {
@@ -62,7 +63,8 @@ module.exports = {
           //chunkFilename: '[id].css',
         }),
         new CopyWebpackPlugin([
-        { from: `${PATHS.src}/${PATHS.assets}fonts`, to: `${PATHS.assets}fonts` },
+        { from: `${PATHS.src}/${PATHS.fonts}fonts`, 
+        to: `${PATHS.dist}/${PATHS.assets}fonts` },
           ])
       ]
 }
