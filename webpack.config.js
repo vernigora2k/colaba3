@@ -28,6 +28,19 @@ module.exports = {
              test: /\.css$/i,
              use: [MiniCssExtractPlugin.loader, 'css-loader'],
             },{
+             test: /\.scss$/i,
+             use: [
+                'style-loader', 
+                MiniCssExtractPlugin.loader,
+                {
+                  loader: 'css-loader',
+                  options: {sourceMap: true}
+                }, {
+                  loader: 'sass-loader',
+                  options: {sourceMap: true}
+                }
+              ]
+            },{
              test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
              loader: 'file-loader',
              options: {
