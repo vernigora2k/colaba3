@@ -45,7 +45,8 @@ module.exports = {
              test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
              loader: 'file-loader',
              options: {
-                 name: '[name].[ext]'
+                 name: '[name].[ext]',
+                 outputPath: 'assets/fonts/'
                  }
             }
         ]
@@ -62,9 +63,9 @@ module.exports = {
           filename: '[name].css',
           //chunkFilename: '[id].css',
         }),
-        new CopyWebpackPlugin([
-        { from: `${PATHS.src}/${PATHS.fonts}fonts`, 
-        to: `${PATHS.dist}/${PATHS.assets}fonts` },
-          ])
+        // new CopyWebpackPlugin([
+        // { from: `${PATHS.src}/${PATHS.fonts}fonts`, 
+        // to: `${PATHS.dist}/${PATHS.assets}fonts` },
+        //   ])
       ]
 }
