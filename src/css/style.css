@@ -22,9 +22,9 @@ body {
   margin: 0 auto;
 }
 
-/*header styles start*/
 
-.header {
+/*header styles start*/
+/* .header {
   position: fixed;
   top: 0;
   right: 0;
@@ -70,13 +70,12 @@ body {
 .header-nav-list-item-link:focus,
 .header-nav-list-item-link:active {
   opacity: 0.75;
-}
-
-
+} */
 /*header styles end*/
 
+
 /*intro styles start*/
-.intro {
+/* .intro {
   height: 100vh;
   background: url(/img/jpg/Rectangle.jpg) no-repeat center;
   background-size: cover;
@@ -103,7 +102,7 @@ body {
   max-height: 111px;
   margin: 0 auto;
   margin-bottom: 50px;
-}
+} */
 
 .div_button{
   display: flex;
@@ -128,8 +127,8 @@ body {
 }
 /*intro styles end*/
 
-/*our_services style start*/
 
+/*our_services style start*/
 .our_services {
   height: 603px;
   background-color: #ffffff;

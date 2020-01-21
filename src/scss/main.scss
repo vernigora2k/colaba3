@@ -1,1 +1,65 @@
-//main.css
+section.intro {
+    height: 100vh;
+    background: url(/img/intro/Rectangle.jpg);
+    background-size: cover;
+    div.wrap {
+        max-width: 1110px;
+        margin: 0 auto;
+      header.header {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+        div.nav-null {}
+  
+        nav.nav {
+          ul.nav-list {
+              display: flex;
+              flex-wrap: wrap;
+            li.nav-list__link.nav-list__link_active {
+              a {
+  
+              }
+            }
+  
+            li.nav-list__link {
+                margin-right: 40px;
+                margin-top: 40px;
+              a {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                text-decoration: none;
+                color: #ffffff;
+                &:hover,
+                &:focus,
+                &:active {
+                    opacity: 0.75;
+                }
+                &:hover {
+                    border-bottom: 2px solid #ffffff;
+                    padding-bottom: 39px;
+                }
+              }
+              &:last-child {
+                  margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+  
+      div.main-intro {
+        div.main-intro__pretitle {
+  
+        }
+  
+        div.main-intro__title.title {
+  
+        }
+  
+        div.main-intro__button.button {
+  
+        }
+      }
+    }
+  }
