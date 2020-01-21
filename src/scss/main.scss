@@ -103,3 +103,78 @@ section.intro {
       }
     }
   }
+  section.our-services {
+        height: 603px;
+        background-color: #ffffff;
+    div.wrap {
+            max-width: 1110px;
+            margin: 0 auto;
+      h1.our-services__title {
+                max-width: 739px;
+                max-height: 88px;
+                margin: 0 auto;
+                margin-top: 110px;
+                margin-bottom: 50px;
+                font-weight: bold;
+                font-size: 36px;
+                line-height: 53px;
+                text-align: center;
+                color: #323232;
+            }
+  
+      p.our-services__under-title {
+                max-width: 730px;
+                max-height: 41px;
+                margin: 0 auto;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 25px;
+                text-align: center;
+                color: #999999;
+                margin-bottom: 70px;
+            }
+  
+      div.services-block {
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+          li {
+            div.services-block__services-box.services-box {
+                width: 353px;
+                height: 139px;
+                padding-top: 46px;
+                padding-left: 127px;
+                background: url(/img/png/services_item_icon.png) no-repeat;
+                margin-bottom: 55px;
+                h3.services-box__title {
+                    max-width: 226px;
+                    max-height: 23px;
+                    font-weight: 600;
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: #000000;
+                    margin-bottom: 12px;
+              }
+  
+              p.services-box__description {
+                    max-width: 222px;
+                    max-height: 58px;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 22px;
+                    color: #999999;
+              }
+            }
+          }
+        }
+      }
+  
+      div.div_button {
+        button.first-screen_button {
+          p.button_signature {
+  
+          }
+        }
+      }
+    }
+  }
