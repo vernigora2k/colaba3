@@ -1,4 +1,10 @@
 
+//flex
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 //wrappers 
 div.wrap {
     max-width: 1110px;
@@ -8,8 +14,6 @@ div.wrap {
 // buttons start
 
 div.button {
-    display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     button.services-button__btn {
         width: 200px;
