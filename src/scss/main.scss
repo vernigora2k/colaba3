@@ -180,3 +180,87 @@ section.intro {
       }
     }
   }
+  section.hi-standart {
+    height: 797px;
+    background-color: #f6f6f8;
+    div.hi-standart-flex.wrap {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between; 
+      padding-top: 100px;
+
+      border-bottom: 1px solid #E0E0E0;
+      padding-bottom: 90px;
+      div.hi-standart-block {
+        padding-top: 52px;
+        h2.hi-standart-block__title {
+          max-width: 424px;
+          max-height: 88px;
+          font-weight: bold;
+          font-size: 36px;
+          line-height: 53px;
+          color: #323232;
+          margin-bottom: 40px;
+        }
+        p.hi-standart-block__under-title {
+          max-width: 489px;
+          max-height: 117px;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 25px;
+          color: #999999;
+          margin-bottom: 30px;
+        }
+        a.hi-standart-block__more-info {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 20px;
+          text-decoration-line: underline;
+          color: #4985FF;
+        }
+      }
+  
+      div.hi-standart-block__img {
+        img {
+        }
+      }
+    }
+  
+    div.our-projects-block {
+      margin-top: 70px;
+      margin-bottom: 70px;
+      ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-left: 95px;
+        margin-right: 95px;
+        li.project-item {
+          div {
+            img.project-item__img {
+              display: inline-block;
+              width: 30px;
+              height: 30px;
+              margin-bottom: 15px;
+              margin-right: 20px;
+            }
+  
+            h3.project-item__number {
+              display: inline-block;
+              max-width: 54px;
+              max-height: 35px;
+              font-weight: normal;
+              font-size: 36px;
+              line-height: 53px;
+              color: #000000;
+              margin-bottom: 17px;
+            }
+  
+            p.project-item__text {
+  
+            }
+          }
+        }
+      }
+    }
+  }
