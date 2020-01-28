@@ -1,4 +1,4 @@
 import './js/common'
-import './css/reset.css'
+import './scss/reset.scss'
 import './scss/main.scss'
 import './scss/font_montserrat.scss'
