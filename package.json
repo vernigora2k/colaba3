@@ -1,6 +1,6 @@
 {
   "name": "project-1_with_webpack",
-  "version": "2.8.0",
+  "version": "2.8.1",
   "description": "project-1_with_webpack",
   "main": "index.js",
   "scripts": {
