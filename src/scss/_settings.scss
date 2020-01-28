@@ -1,4 +1,21 @@
-
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    color: #323232;
+  }
+  
 //flex
 .flex {
     display: flex;
@@ -12,7 +29,6 @@ div.wrap {
 }
 
 // buttons start
-
 div.button {
     justify-content: center;
     button.services-button__btn {
