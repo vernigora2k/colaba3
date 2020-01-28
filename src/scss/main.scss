@@ -1,5 +1,6 @@
 @import "./settings";
 
+// section intro------------------------
 section.intro {
     height: 100vh;
     background: url(/img/intro/Rectangle.jpg);
@@ -9,16 +10,8 @@ section.intro {
           justify-content: space-between;
           width: 100%;
           height: 100px;
-        div.nav-null {}
-  
         nav.nav {
           ul.nav-list {
-            li.nav-list__link.nav-list__link_active {
-              a {
-  
-              }
-            }
-  
             li.nav-list__link {
                 margin-right: 40px;
                 margin-top: 40px;
@@ -46,6 +39,7 @@ section.intro {
         }
       }
     }
+
     div.intro__line-under-header {
         width: 100%;
         height: 1px;
@@ -63,7 +57,6 @@ section.intro {
             margin: 0 auto;
             margin-bottom: 20px;
         }
-  
         div.main-intro__title.title {
             font-weight: 800;
             font-size: 48px;
@@ -75,7 +68,6 @@ section.intro {
             margin-bottom: 63px;
             text-align: center;
         }
-  
         div.main-intro__button.button {   
             justify-content: center;
             button {
@@ -97,6 +89,7 @@ section.intro {
       }
     }
   }
+// section our-services-----------------------------
   section.our-services {
         height: 603px;
         background-color: #ffffff;
@@ -115,7 +108,6 @@ section.intro {
                 text-align: center;
                 color: #323232;
             }
-  
       p.our-services__under-title {
                 max-width: 730px;
                 max-height: 41px;
@@ -127,7 +119,6 @@ section.intro {
                 color: #999999;
                 margin-bottom: 70px;
             }
-  
       div.services-block {
         ul {
           li {
@@ -147,7 +138,6 @@ section.intro {
                     color: #000000;
                     margin-bottom: 12px;
               }
-  
               p.services-box__description {
                     max-width: 222px;
                     max-height: 58px;
@@ -160,16 +150,9 @@ section.intro {
           }
         }
       }
-  
-      div.button {
-        button.services-button__btn {
-          p.services-button__signature {
-  
-          }
-        }
-      }
     }
   }
+// section hi-standart---------------------------
   section.hi-standart {
     height: 797px;
     background-color: #f6f6f8;
@@ -207,13 +190,7 @@ section.intro {
           color: #4985FF;
         }
       }
-  
-      div.hi-standart-block__img {
-        img {
-        }
-      }
     }
-  
     div.our-projects-block {
       margin-top: 70px;
       margin-bottom: 70px;
@@ -230,7 +207,6 @@ section.intro {
               margin-bottom: 15px;
               margin-right: 20px;
             }
-  
             h3.project-item__number {
               display: inline-block;
               max-width: 54px;
@@ -240,10 +216,6 @@ section.intro {
               line-height: 53px;
               color: #000000;
               margin-bottom: 17px;
-            }
-  
-            p.project-item__text {
-  
             }
           }
         }

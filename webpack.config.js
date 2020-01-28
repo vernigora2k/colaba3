@@ -1,6 +1,7 @@
 const path = require("path");
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const PATHS = {
     src: path.join(__dirname, '../src'),
@@ -53,19 +54,19 @@ module.exports = {
     },
 
     devServer: {
-        overlay: true
+        overlay: true,
+        contentBase: path.join(__dirname, '/public')
     },
 
     plugins: [
         new MiniCssExtractPlugin({
-          // Options similar to the same options in webpackOptions.output
-          // both options are optional
           filename: '[name].css',
-          //chunkFilename: '[id].css',
         }),
-        // new CopyWebpackPlugin([
-        // { from: `${PATHS.src}/${PATHS.fonts}fonts`, 
-        // to: `${PATHS.dist}/${PATHS.assets}fonts` },
-        //   ])
+        new HtmlWebpackPlugin({
+          title: 'Передовая IT студия',
+          template:__dirname + '/public/index.html',
+          filename: 'index_bundle.html',
+          
+        })
       ]
 }
